@@ -1,0 +1,26 @@
+light:
+  - platform: mqtt
+    name: "Window Bottom Center"
+    state_topic: "blind/bc/state"
+    command_topic: "blind/bc/command"
+    brightness_state_topic: "blind/bc/state"
+    brightness_command_topic: "blind/bc/level"
+    brightness_scale: 100
+    qos: 0
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    retain: true
+
+  - platform: mqtt
+    name: "Window Bottom Right"
+    state_topic: "blind/br/state"
+    command_topic: "blind/br/command"
+    brightness_state_topic: "blind/br/state"
+    brightness_command_topic: "blind/br/level"
+    brightness_scale: 100
+    qos: 0
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    retain: true
